@@ -1,0 +1,46 @@
+ <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>MARQUEE TAGS</title>
+  </head>
+  <body>
+    <center>
+      <h1>MARQUEE TAGS</h1>
+    </center>
+    <marquee>THIS IS A MARQUEE TAG</marquee>
+    <marquee behavior="slide"> HI I AM SANJANA</marquee>
+    <br>
+    <marquee behavior="scroll" bgcolor="teal"> hiiiiiiiiiiiiiiiiiiii</marquee>
+    <marquee><a href=#> This is a marquee tag</a></marquee>
+
+    <br />
+    <marquee behavior="alternate" bgcolor="skyblue">heloooooooooooooo</marquee>
+    <br>
+    <marquee bgcolor="red" direction="up" height="60">THIS MOVES UP</marquee>
+    <hr>
+    <br>
+    <marquee bgcolor="goldenrod" direction="down" height="75" scrollamount="15">this moves down</marquee>
+    <br>
+    <marquee bgcolor="lavender" behavior="alternate" scrollamount="20"> This moves alternate</marquee>
+    <br>
+    <hr>
+    <marquee bgcolor="purple" direction="right" onmouseenter="stopScroll()" onmouseleave="startScroll()" id="abc">HI THIS IS SANJANA</marquee>
+    <script>
+        function stopScroll() {
+            let marquee = document.getElementById("abc").stop();
+        }
+        function startScroll() {
+            let marquee = document.getElementById("abc").start();
+        }
+        
+        // another way of writing the functionality
+        // document.getElementById("abc").onmouseenter = function(){
+        //     document.getElementById("abc").stop();
+        // }
+        // document.getElementById("abc").onmouseleave = function(){
+        //     document.getElementById("abc").start();
+        // }
+      </script>
+  </body>
+ 
+</html>
